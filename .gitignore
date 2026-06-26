@@ -1,0 +1,40 @@
+# ----- Claude Code -----
+.claude/
+CLAUDE.md.local
+
+# ----- Python (certificate generator) -----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.Python
+
+# ----- OS files -----
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# macOS
+.DS_Store
+.AppleDouble
+# Linux
+*~
+
+# ----- Editor / IDE -----
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ----- Logs & temp -----
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ----- Local dev servers -----
+.cache/
