@@ -350,6 +350,22 @@
 	};
 
 
+	var backToTop = function() {
+		var $btn = $('#backToTop');
+
+		var toggleBtn = function() {
+			if ( $(window).scrollTop() > 300 ) {
+				$btn.addClass('show');
+			} else {
+				$btn.removeClass('show');
+			}
+		};
+
+		toggleBtn();
+		$(window).scroll(toggleBtn);
+	};
+
+
 	$(function(){
 
 		OnePageNav();
@@ -360,6 +376,7 @@
 		smoothScroll();
 		portfolioMasonry();
 		imageModal();
+		backToTop();
 	});
 
 	
