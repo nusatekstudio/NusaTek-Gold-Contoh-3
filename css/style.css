@@ -200,6 +200,18 @@ a {
     max-width: 640px;
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.5); }
+  @media (max-width: 767px) {
+    .site-hero {
+      /* subject sits on the right of the photo; on narrow screens shift the
+         crop right so her face stays in frame instead of being cut off */
+      background-position: 78% center; }
+    .site-hero, .site-hero .row {
+      min-height: 640px; }
+    .site-hero .intro-text {
+      /* keep the headline clear of her face */
+      padding-bottom: 8vh; }
+    .site-hero h1 {
+      font-size: 42px; } }
 
 .site-section {
   padding: 5em 0; }
